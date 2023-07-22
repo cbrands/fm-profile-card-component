@@ -1,0 +1,113 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: #FFF;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    background: url(../images/bg-pattern-bottom.svg) bottom -600px right -150px no-repeat, url(../images/bg-pattern-top.svg) top -500px left -200px no-repeat;
+    background-color: var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-width: 90%;
+    min-height: 374px;
+    background-color: transparent;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.card-top {
+    position: relative;
+    min-height: 140px;
+    background-image: url("images/bg-pattern-card.svg");
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-bottom {
+    height: 100%;
+    background-color: var(--white);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.victor {
+    position: absolute;
+    top: calc(100% - 48px);
+    left: calc(50% - 48px);
+    display: inline-block;
+    width: 96px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.name {
+    font-weight: 700;
+}
+.age {
+    color: var(--dark-gray);
+}
+
+.user-info {
+    margin-top: 60px;
+}
+
+ .place {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--dark-gray);
+ }
+
+.footer { 
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--dark-gray);
+}
+
+.amount {
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+.type {
+    color: var(--dark-gray);
+}
